@@ -1,0 +1,318 @@
+/* The stylesheet is sorted in alphabetical order. This makes it very easy to 
+find specific elements and captures most specificity and inheritance. The tradeoff
+is elements are not always grouped together based on what and where they contribute 
+to the web page.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+body {
+    font-family:  'Poppins', sans-serif;
+    font-size: 100%;
+    color: #666;
+    background-color: #ddc806;
+}
+
+.center-mid-1{
+    width: 940px;
+    background-color: #ddc806;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    text-align:center;
+}
+
+
+.container {
+    position: relative;
+    width: 50%;
+    float: left;
+  }
+
+.center-mid-1-tutorial{
+    width: 940px;
+    background-color: #ddc806;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    text-align:center;
+    display: inline-block;
+    float: left;
+
+}
+.container img{
+    opacity: 1;
+    width: 50%;
+    transition: .3s ease;
+  }
+
+.container:hover img{
+    opacity: 0.3;
+}
+
+.container:hover .middle{
+    opacity: 1;
+}
+
+
+.center-mid-2{
+    width: 940px;
+    background-color: #efeae6;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.center-mid-3{
+    width: 940px;
+    background-color: #dee1e5;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.center-2{
+    width: 940px;
+    margin: auto;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    }
+
+.center-3{
+    width: 300px;
+    margin: 0 0;
+}
+
+.center-text {
+    text-align: center;
+
+}
+.center-2>h1, .center-2>p{
+    text-align: center;
+}
+
+.center-mid-1-tutorial ul,li{
+    float: right;
+ }
+ 
+
+.emphasize{
+    font-size: 2000%;
+}
+
+fieldset {
+    /*width: 400px;*/
+    margin-top: 20px;
+    border: 1px solid #d6d6d6;
+    background-color: #fa631d;
+    line-height: 1.6em;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+}
+
+form {
+    background-color: #fa631d;
+}
+
+
+h1.center-text
+{
+    font-family: 'Berkshire Swash', serif;
+    font-size: 550%;
+}
+
+#home{
+    background-color: rgba(226, 217, 217, 0.835);
+    display: flex;
+}
+
+
+.img-1{
+    margin: auto;
+    width: 50%;
+    display:flex;
+    border: thick double #ddc806;
+}
+.img-2{
+    margin: auto;
+    width: 30%;
+    /*border: thick double #ddc806;*/
+    padding-right: 10px;
+}
+
+input[type="text"] {
+    width: 120px;
+    border: 1px solid #d6d6d6;
+    padding: 2px;
+    outline: none;}
+input[type="text"]:focus,
+input[type="text"]:hover {
+    background-color: #d0e2f0;
+    border: 1px solid #999999;}
+input[type="submit"] {
+    border: 1px solid #006633;
+    background-color: #009966;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;}
+input[type="submit"]:hover {
+    border: 1px solid #006633;
+    background-color: #00CC33;
+    color: #ffffff;
+    cursor: pointer;}
+
+
+legend {
+    font-style: italic;
+    color: #666666;}
+
+li {
+    list-style-image: url("images/icon-plus.png");
+    line-height: 1.6em;
+}
+
+.menu-holder {
+    float: right;
+    max-width: 80%;
+    /*position: fixed;*/
+    text-align: center;
+    height: 100%;
+    background-color: #dbd1d1;
+    right: -100%;
+    top: 0;
+    transition: right .3s ease;
+    width: 100%;
+    overflow: auto;
+    max-width: 100%;
+    z-index: 99;
+}  
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+#norightpadding{
+    padding-right: 0px;
+}
+
+
+#page{
+    max-width: 940px;
+    min-width: 720px;
+    margin: 10px auto 10px auto;
+    
+    border: 4px  #000;
+    background-color: #f6f4e8;
+    vertical-align: baseline;
+}
+
+.tutorial{
+    display: inline-block;
+    text-align: center;
+}
+.tutorial-step{
+    padding: 10px;
+    border: thick double #ddc806;
+}
+
+
+.submit {
+    width: 310px;
+    text-align: right;}
+
+table {
+    border-spacing: 0px;
+}
+
+
+th, td {
+    padding: 5px 30px 5px 10px;
+    border-spacing: 0px;
+    font-size: 90%;
+    margin: 0px;}
+
+th, td {
+    text-align: left;
+    background-color: #e2bf7e;
+    border-top: 1px solid #f1f8fe;
+    border-bottom: 1px solid #cbd2d8;
+    border-right: 1px solid #cbd2d8;}
+
+
+tr.even td, tr.even th {
+    background-color: #fff4df;}
+
+tr.head th {
+    color: #fff;
+    background-color: #e0840a;
+    border-bottom: 2px solid #547ca0;
+    border-right: 1px solid #749abe;
+    border-top: 1px solid #90b4d6;
+    text-align: center;
+    text-shadow: -1px -1px 1px #666666;
+    letter-spacing: 0.15em;}
+
+tr.head th:first-child {
+    /* WebKit is a browser engine used in Apple's Safari browser, Amazon 
+        Kindle e-book reader, BlackBerry Browser in OS 6 and above.
+
+        Not all CSS3 properties work well in all browsers. In a way to ensure that web pages display as expected in their browsers, vendors like Mozilla and Webkit developed their own browser-compatible properties. With CSS3, many compatibility issues are now resolved.
+        However, it is not unusual to still see these properties used in stylesheets. */
+
+    /* Webkit property*/
+    -webkit-border-top-left-radius: 5px;
+
+    /* Mozilla property*/
+    -moz-border-radius-topleft: 5px;
+
+    /* CSS3 property*/
+    border-top-left-radius: 5px;
+
+    /* More on border-radius property: https://www.the-art-of-web.com/css/border-radius/ */
+}
+tr.head th:last-child {
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;}
+
+.title {
+    float: left;
+    width: 160px;
+    clear: left;}
+
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+    }
+
+ul li {
+    display: inline;
+    padding: 10px;
+    float: right;
+}
+
+ul li a, 
+ul a :hover, 
+ul li a:focus, 
+ul li a:active {
+border: none;
+text-decoration: none;
+color: inherit;
+}
+
+
+video{
+    width: 940px;
+}
+
